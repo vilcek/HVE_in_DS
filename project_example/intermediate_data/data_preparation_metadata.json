@@ -1,0 +1,37 @@
+{
+  "data_preparation_summary": {
+    "training_shape": [
+      20631,
+      12
+    ],
+    "test_shape": [
+      13096,
+      12
+    ],
+    "features_removed": 16,
+    "features_remaining": 9,
+    "outliers_preserved": true,
+    "normalization_ready": true,
+    "temporal_structure_validated": true,
+    "no_data_leakage": true,
+    "leakage_prevention_applied": true
+  },
+  "feature_summary": {
+    "total_original_features": 24,
+    "features_removed": 16,
+    "features_for_scaling": 9,
+    "removal_reasons": {
+      "low_variance": 11,
+      "constant_values": 3,
+      "high_correlation": 1,
+      "data_leakage_prevention": 1
+    }
+  },
+  "data_quality": {
+    "missing_values": 0,
+    "infinite_values": 0,
+    "temporal_ordering": "validated",
+    "distribution_shifts": 8,
+    "data_leakage_verified": "none_detected"
+  }
+}

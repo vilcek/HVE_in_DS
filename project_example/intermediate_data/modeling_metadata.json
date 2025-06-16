@@ -1,0 +1,245 @@
+{
+  "task_info": {
+    "task_name": "modeling",
+    "task_number": 4,
+    "description": "Machine learning model development for RUL prediction",
+    "timestamp": "2025-06-03T00:15:41.169533",
+    "random_state": 42
+  },
+  "data_info": {
+    "training_samples": 16504,
+    "validation_samples": 4127,
+    "test_samples": 13096,
+    "num_features": 56,
+    "feature_names": [
+      "sensor_3",
+      "sensor_4",
+      "sensor_7",
+      "sensor_9",
+      "sensor_11",
+      "sensor_12",
+      "sensor_17",
+      "sensor_20",
+      "sensor_21",
+      "sensor_4_cumulative_range",
+      "sensor_11_cumulative_range",
+      "time_since_start",
+      "sensor_7_cumulative_range",
+      "sensor_4_rolling_mean_3",
+      "composite_health_index",
+      "sensor_7_rolling_mean_3",
+      "sensor_4_to_sensor_7_ratio",
+      "sensor_3_cumulative_max",
+      "sensor_11_lag_1",
+      "sensor_7_sensor_11_diff",
+      "sensor_11_lag_2",
+      "sensor_11_health_deviation",
+      "sensor_3_rolling_mean_3",
+      "sensor_3_rolling_max_10",
+      "sensor_11_cumulative_std",
+      "sensor_11_lag_3",
+      "sensor_3_cumulative_range",
+      "sensor_4_lag_1",
+      "sensor_4_lag_2",
+      "sensor_11_diff_from_initial",
+      "sensor_3_rolling_max_5",
+      "sensor_4_lag_3",
+      "sensor_4_health_deviation",
+      "sensor_3_to_sensor_7_ratio",
+      "sensor_7_lag_1",
+      "sensor_4_cumulative_std",
+      "sensor_3_rolling_min_5",
+      "sensor_7_lag_2",
+      "sensor_3_rolling_max_3",
+      "sensor_3_rolling_min_10",
+      "sensor_7_lag_3",
+      "sensor_7_cumulative_std",
+      "sensor_3_rolling_min_3",
+      "cycles_squared",
+      "sensor_7_health_deviation",
+      "sensor_4_diff_from_initial",
+      "sensor_7_diff_from_initial",
+      "sensor_3_lag_1",
+      "sensor_3_lag_2",
+      "sensor_3_lag_3",
+      "sensor_9_to_sensor_11_ratio",
+      "sensor_3_health_deviation",
+      "sensor_3_diff_from_initial",
+      "sensor_9_cumulative_std",
+      "sensor_3_cumulative_std",
+      "cycle_stage"
+    ]
+  },
+  "model_performance": {
+    "best_model": "Weighted Ensemble",
+    "best_rmse": 9.209836409450158,
+    "best_r2": 0.9820700176482389,
+    "best_mae": 5.301935589778773,
+    "best_mape": 7.525359038807103,
+    "best_phm_score": 13970.269767197526
+  },
+  "all_models_performance": [
+    {
+      "Model": "Linear Regression",
+      "RMSE": 35.059986550732646,
+      "MAE": 25.55004200645998,
+      "R\u00b2": 0.7401638813414358,
+      "MAPE": 59.00260249143127,
+      "PHM_Score": 2342747.6577392733
+    },
+    {
+      "Model": "Ridge Regression",
+      "RMSE": 35.2138137485601,
+      "MAE": 25.71378261795495,
+      "R\u00b2": 0.7378787950814399,
+      "MAPE": 62.7013591677135,
+      "PHM_Score": 2261206.6117741438
+    },
+    {
+      "Model": "Lasso Regression",
+      "RMSE": 36.21309036410874,
+      "MAE": 26.821892913208924,
+      "R\u00b2": 0.7227910762856129,
+      "MAPE": 62.45300502055375,
+      "PHM_Score": 3413756.112032148
+    },
+    {
+      "Model": "Random Forest",
+      "RMSE": 10.367854026617538,
+      "MAE": 5.641530938658355,
+      "R\u00b2": 0.9772776221279597,
+      "MAPE": 9.109549778910512,
+      "PHM_Score": 20694.695599529183
+    },
+    {
+      "Model": "XGBoost",
+      "RMSE": 9.38218312054406,
+      "MAE": 5.251529216766357,
+      "R\u00b2": 0.9813926815986633,
+      "MAPE": 7.4098927841537865,
+      "PHM_Score": 31299.39583233269
+    },
+    {
+      "Model": "LightGBM",
+      "RMSE": 9.782240214207915,
+      "MAE": 5.841334584309202,
+      "R\u00b2": 0.9797720125091671,
+      "MAPE": 8.134838804248362,
+      "PHM_Score": 12053.259755236557
+    },
+    {
+      "Model": "Neural Network",
+      "RMSE": 24.48835997000574,
+      "MAE": 15.760491540864182,
+      "R\u00b2": 0.8732361469932389,
+      "MAPE": 17.76673872532252,
+      "PHM_Score": 752185.0958919415
+    },
+    {
+      "Model": "Gradient Boosting",
+      "RMSE": 10.339075992714376,
+      "MAE": 6.310431536110703,
+      "R\u00b2": 0.977403587990734,
+      "MAPE": 8.815722696291871,
+      "PHM_Score": 24692.26994328924
+    },
+    {
+      "Model": "Voting Ensemble",
+      "RMSE": 9.225281931722241,
+      "MAE": 5.339786562511079,
+      "R\u00b2": 0.982009827618511,
+      "MAPE": 7.5442267317203475,
+      "PHM_Score": 14120.228513609645
+    },
+    {
+      "Model": "Weighted Ensemble",
+      "RMSE": 9.209836409450158,
+      "MAE": 5.301935589778773,
+      "R\u00b2": 0.9820700176482389,
+      "MAPE": 7.525359038807103,
+      "PHM_Score": 13970.269767197526
+    }
+  ],
+  "feature_importance": {
+    "top_15_features": [
+      {
+        "feature": "sensor_4_cumulative_range",
+        "avg_importance": 262.5537869703891
+      },
+      {
+        "feature": "sensor_3_cumulative_max",
+        "avg_importance": 251.2794691520446
+      },
+      {
+        "feature": "sensor_3_cumulative_range",
+        "avg_importance": 221.01336276818563
+      },
+      {
+        "feature": "sensor_9_cumulative_std",
+        "avg_importance": 213.27166602977667
+      },
+      {
+        "feature": "time_since_start",
+        "avg_importance": 199.30815077004786
+      },
+      {
+        "feature": "sensor_7_cumulative_range",
+        "avg_importance": 199.2634245126537
+      },
+      {
+        "feature": "sensor_11_cumulative_range",
+        "avg_importance": 183.26951883441222
+      },
+      {
+        "feature": "sensor_11_cumulative_std",
+        "avg_importance": 174.03813425006726
+      },
+      {
+        "feature": "sensor_3_cumulative_std",
+        "avg_importance": 161.25992844518984
+      },
+      {
+        "feature": "sensor_7_cumulative_std",
+        "avg_importance": 160.009193075106
+      },
+      {
+        "feature": "sensor_4_cumulative_std",
+        "avg_importance": 147.2639747591483
+      },
+      {
+        "feature": "sensor_3_rolling_min_10",
+        "avg_importance": 121.00344088723081
+      },
+      {
+        "feature": "sensor_3_rolling_max_10",
+        "avg_importance": 93.2539794681254
+      },
+      {
+        "feature": "sensor_4_rolling_mean_3",
+        "avg_importance": 92.26178830809808
+      },
+      {
+        "feature": "sensor_9",
+        "avg_importance": 90.50216088375387
+      }
+    ]
+  },
+  "ensemble_info": {
+    "voting_ensemble_models": [
+      "XGBoost",
+      "LightGBM",
+      "Gradient Boosting"
+    ],
+    "weighted_ensemble_weights": {
+      "XGBoost": 0.349,
+      "LightGBM": 0.335,
+      "Gradient Boosting": 0.317
+    }
+  },
+  "files_created": {
+    "test_predictions": "modeling_test_predictions.csv",
+    "performance_summary": "modeling_performance_summary.csv",
+    "metadata": "modeling_metadata.json",
+    "documentation": "modeling_results.md"
+  }
+}

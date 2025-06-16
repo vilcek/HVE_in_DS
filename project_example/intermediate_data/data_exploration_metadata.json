@@ -1,0 +1,136 @@
+{
+  "exploration_date": "2025-05-26",
+  "dataset": "FD001",
+  "total_features": 26,
+  "sensor_count": 21,
+  "operational_settings": 3,
+  "train_engines": 100,
+  "test_engines": 100,
+  "low_informative_sensors": [
+    "sensor_1",
+    "sensor_5",
+    "sensor_6",
+    "sensor_8",
+    "sensor_10",
+    "sensor_13",
+    "sensor_15",
+    "sensor_16",
+    "sensor_18",
+    "sensor_19"
+  ],
+  "high_informative_sensors": [
+    "sensor_2",
+    "sensor_3",
+    "sensor_4",
+    "sensor_7",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_14",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ],
+  "top_predictive_sensors": [
+    "sensor_9",
+    "sensor_14",
+    "sensor_4",
+    "sensor_11",
+    "sensor_12",
+    "sensor_7",
+    "sensor_15",
+    "sensor_3",
+    "sensor_21",
+    "sensor_20"
+  ],
+  "recommended_for_removal": [
+    "sensor_1",
+    "sensor_5",
+    "sensor_6",
+    "sensor_8",
+    "sensor_10",
+    "sensor_13",
+    "sensor_15",
+    "sensor_16",
+    "sensor_18",
+    "sensor_19"
+  ],
+  "constant_operational_settings": [],
+  "highly_correlated_pairs": [
+    [
+      "sensor_9",
+      "sensor_14",
+      0.9631566003059777
+    ]
+  ],
+  "insights": {
+    "data_quality": {
+      "missing_values": "No missing values found in any dataset",
+      "data_types": "All features are numeric (float64/int64)",
+      "outliers": "Some outlier engines in lifecycle length detected",
+      "data_integrity": "Data integrity confirmed - no infinite or extremely large values"
+    },
+    "target_variable": {
+      "rul_range_train": "1-362 cycles",
+      "rul_mean_train": "108.81 cycles",
+      "rul_range_test": "7-145 cycles",
+      "rul_mean_test": "75.52 cycles",
+      "distribution": "RUL shows reasonable distribution in both train and test sets"
+    },
+    "operational_settings": {
+      "op_setting_1": "Constant across all engines and time (value: -0.0007)",
+      "op_setting_2": "Variable - 13 unique values",
+      "op_setting_3": "Variable - 1 unique values",
+      "impact": "Some operational settings show correlation with sensor readings"
+    },
+    "sensors": {
+      "total_sensors": 21,
+      "low_variance": 10,
+      "high_informative": 11,
+      "top_sensors": [
+        "sensor_9",
+        "sensor_14",
+        "sensor_4",
+        "sensor_11",
+        "sensor_12"
+      ],
+      "degradation_patterns": "Multiple sensors show clear degradation patterns"
+    },
+    "temporal_patterns": {
+      "lifecycle_range_train": "128-362 cycles",
+      "lifecycle_mean_train": "206.31 cycles",
+      "degradation_consistency": "Degradation patterns vary across engines but show consistent trends for key sensors",
+      "operational_evolution": "Some operational settings remain constant while others vary over time"
+    },
+    "correlations": {
+      "high_sensor_correlations": 1,
+      "top_rul_predictors": [
+        "time_cycles",
+        "sensor_11",
+        "sensor_4",
+        "sensor_12",
+        "sensor_7"
+      ],
+      "feature_redundancy": "Some sensors show high correlation indicating potential redundancy"
+    }
+  },
+  "recommendations": [
+    "\u2705 Data Quality: Excellent - no missing values, consistent formats",
+    "\u26a0\ufe0f  Feature Selection: Consider removing 10 low-informative sensors",
+    "\u26a0\ufe0f  Multicollinearity: Monitor 1 highly correlated sensor pairs",
+    "\u2705 Target Variable: Well-distributed RUL values suitable for regression",
+    "\u26a0\ufe0f  Operational Settings: op_setting_1 is constant and can be removed",
+    "\u2705 Temporal Patterns: Clear degradation trends identified in multiple sensors",
+    "\u26a0\ufe0f  Engine Variability: High initial condition variability requires normalization",
+    "\u2705 Predictive Potential: 11 sensors show strong predictive potential"
+  ],
+  "challenges": [
+    "1. High manufacturing variability in initial conditions",
+    "2. Variable lifecycle lengths across engines",
+    "3. Some sensors show inconsistent degradation patterns",
+    "4. Operational setting dependencies need consideration",
+    "5. Feature selection required due to low-informative sensors",
+    "6. Potential multicollinearity among sensors",
+    "7. Time series nature requires appropriate modeling approach"
+  ]
+}

@@ -1,0 +1,258 @@
+{
+  "feature_engineering_summary": {
+    "total_features": 59,
+    "original_features": 12,
+    "engineered_features": 47,
+    "sensor_features": 9,
+    "id_target_features": 3
+  },
+  "feature_categories": {
+    "id_columns": [
+      "unit_id",
+      "time_cycles",
+      "RUL"
+    ],
+    "sensor_columns": [
+      "sensor_3",
+      "sensor_4",
+      "sensor_7",
+      "sensor_9",
+      "sensor_11",
+      "sensor_12",
+      "sensor_17",
+      "sensor_20",
+      "sensor_21"
+    ],
+    "selected_engineered_features": [
+      "sensor_4_cumulative_range",
+      "sensor_11_cumulative_range",
+      "time_since_start",
+      "sensor_7_cumulative_range",
+      "sensor_4_rolling_mean_3",
+      "composite_health_index",
+      "sensor_7_rolling_mean_3",
+      "sensor_4_to_sensor_7_ratio",
+      "sensor_3_cumulative_max",
+      "sensor_11_lag_1",
+      "sensor_7_sensor_11_diff",
+      "sensor_11_lag_2",
+      "sensor_11_health_deviation",
+      "sensor_3_rolling_mean_3",
+      "sensor_3_rolling_max_10",
+      "sensor_11_cumulative_std",
+      "sensor_11_lag_3",
+      "sensor_3_cumulative_range",
+      "sensor_4_lag_1",
+      "sensor_4_lag_2",
+      "sensor_11_diff_from_initial",
+      "sensor_3_rolling_max_5",
+      "sensor_4_lag_3",
+      "sensor_4_health_deviation",
+      "sensor_3_to_sensor_7_ratio",
+      "sensor_7_lag_1",
+      "sensor_4_cumulative_std",
+      "sensor_3_rolling_min_5",
+      "sensor_7_lag_2",
+      "sensor_3_rolling_max_3",
+      "sensor_3_rolling_min_10",
+      "sensor_7_lag_3",
+      "sensor_7_cumulative_std",
+      "sensor_3_rolling_min_3",
+      "cycles_squared",
+      "sensor_7_health_deviation",
+      "sensor_4_diff_from_initial",
+      "sensor_7_diff_from_initial",
+      "sensor_3_lag_1",
+      "sensor_3_lag_2",
+      "sensor_3_lag_3",
+      "sensor_9_to_sensor_11_ratio",
+      "sensor_3_health_deviation",
+      "sensor_3_diff_from_initial",
+      "sensor_9_cumulative_std",
+      "sensor_3_cumulative_std",
+      "cycle_stage"
+    ],
+    "temporal_features": [
+      "time_since_start",
+      "cycles_squared",
+      "cycle_stage"
+    ],
+    "lag_features": [
+      "sensor_11_lag_1",
+      "sensor_11_lag_2",
+      "sensor_11_lag_3",
+      "sensor_4_lag_1",
+      "sensor_4_lag_2",
+      "sensor_4_lag_3",
+      "sensor_7_lag_1",
+      "sensor_7_lag_2",
+      "sensor_7_lag_3",
+      "sensor_3_lag_1",
+      "sensor_3_lag_2",
+      "sensor_3_lag_3"
+    ],
+    "rolling_features": [
+      "sensor_4_rolling_mean_3",
+      "sensor_7_rolling_mean_3",
+      "sensor_3_rolling_mean_3",
+      "sensor_3_rolling_max_10",
+      "sensor_3_rolling_max_5",
+      "sensor_3_rolling_min_5",
+      "sensor_3_rolling_max_3",
+      "sensor_3_rolling_min_10",
+      "sensor_3_rolling_min_3"
+    ],
+    "interaction_features": [
+      "sensor_4_to_sensor_7_ratio",
+      "sensor_7_sensor_11_diff",
+      "sensor_11_diff_from_initial",
+      "sensor_3_to_sensor_7_ratio",
+      "cycles_squared",
+      "sensor_4_diff_from_initial",
+      "sensor_7_diff_from_initial",
+      "sensor_9_to_sensor_11_ratio",
+      "sensor_3_diff_from_initial"
+    ],
+    "statistical_features": [
+      "sensor_4_cumulative_range",
+      "sensor_11_cumulative_range",
+      "sensor_7_cumulative_range",
+      "sensor_3_cumulative_max",
+      "sensor_11_cumulative_std",
+      "sensor_3_cumulative_range",
+      "sensor_4_cumulative_std",
+      "sensor_7_cumulative_std",
+      "sensor_9_cumulative_std",
+      "sensor_3_cumulative_std"
+    ],
+    "health_features": [
+      "composite_health_index",
+      "sensor_11_health_deviation",
+      "sensor_4_health_deviation",
+      "sensor_7_health_deviation",
+      "sensor_3_health_deviation"
+    ],
+    "degradation_features": [],
+    "variance_features": [
+      "sensor_11_health_deviation",
+      "sensor_4_health_deviation",
+      "sensor_7_health_deviation",
+      "sensor_3_health_deviation"
+    ]
+  },
+  "feature_correlations": {
+    "sensor_4_cumulative_range": 0.7628220239744691,
+    "sensor_11_cumulative_range": 0.75199321081922,
+    "time_since_start": 0.7362405993070223,
+    "sensor_7_cumulative_range": 0.7335222218235186,
+    "sensor_4_rolling_mean_3": 0.7252464237093371,
+    "composite_health_index": 0.7136897943515769,
+    "sensor_7_rolling_mean_3": 0.7044966300504849,
+    "sensor_4_to_sensor_7_ratio": 0.6981535825018478,
+    "sensor_3_cumulative_max": 0.6930530865915625,
+    "sensor_11_lag_1": 0.6921228712003777,
+    "sensor_7_sensor_11_diff": 0.6883382143114244,
+    "sensor_11_lag_2": 0.687844692500065,
+    "sensor_11_health_deviation": 0.6863763822956309,
+    "sensor_3_rolling_mean_3": 0.6858859272658212,
+    "sensor_3_rolling_max_10": 0.6849071522785813,
+    "sensor_11_cumulative_std": 0.68467082891864,
+    "sensor_11_lag_3": 0.6835179456761287,
+    "sensor_3_cumulative_range": 0.6749809661436365,
+    "sensor_4_lag_1": 0.6744855873964465,
+    "sensor_4_lag_2": 0.6698766105068252,
+    "sensor_11_diff_from_initial": 0.6687744500346503,
+    "sensor_3_rolling_max_5": 0.6670503164790376,
+    "sensor_4_lag_3": 0.6651591391724297,
+    "sensor_4_health_deviation": 0.6573649294766983,
+    "sensor_3_to_sensor_7_ratio": 0.6530139269483388,
+    "sensor_7_lag_1": 0.6524489522018662,
+    "sensor_4_cumulative_std": 0.6519782844339157,
+    "sensor_3_rolling_min_5": 0.6491215011995128,
+    "sensor_7_lag_2": 0.6475473799097714,
+    "sensor_3_rolling_max_3": 0.6475396778054909,
+    "sensor_3_rolling_min_10": 0.6453428696073462,
+    "sensor_7_lag_3": 0.642630040644442,
+    "sensor_7_cumulative_std": 0.6411434556441917,
+    "sensor_3_rolling_min_3": 0.6376207751293654,
+    "cycles_squared": 0.6306093584746923,
+    "sensor_7_health_deviation": 0.6300079502033459,
+    "sensor_4_diff_from_initial": 0.6051235573084289,
+    "sensor_7_diff_from_initial": 0.5930267404510671,
+    "sensor_3_lag_1": 0.5791794650271661,
+    "sensor_3_lag_2": 0.5737334409393635,
+    "sensor_3_lag_3": 0.5679972447887385,
+    "sensor_9_to_sensor_11_ratio": 0.5406960005303267,
+    "sensor_3_health_deviation": 0.512034466523792,
+    "sensor_3_diff_from_initial": 0.47563940812200595,
+    "sensor_9_cumulative_std": 0.4542560768645297,
+    "sensor_3_cumulative_std": 0.4465875217691678
+  },
+  "scaling_info": {
+    "numerical_features_scaled": 55,
+    "categorical_features": [
+      "cycle_stage"
+    ],
+    "scaling_method": "StandardScaler + MinMaxScaler"
+  },
+  "data_quality": {
+    "removed_features": {
+      "removed_features": [
+        "sensor_6",
+        "sensor_2",
+        "sensor_5",
+        "sensor_8",
+        "sensor_16",
+        "op_setting_1",
+        "sensor_10",
+        "sensor_13",
+        "sensor_15",
+        "sensor_18",
+        "op_setting_3",
+        "sensor_14",
+        "op_setting_2",
+        "sensor_1",
+        "sensor_19",
+        "lifecycle_stage"
+      ],
+      "removal_rationale": {
+        "uninformative_sensors": [
+          "sensor_15",
+          "sensor_2",
+          "sensor_8",
+          "sensor_13",
+          "sensor_6",
+          "sensor_1",
+          "sensor_5",
+          "sensor_10",
+          "sensor_16",
+          "sensor_18",
+          "sensor_19"
+        ],
+        "constant_op_settings": [
+          "op_setting_1",
+          "op_setting_2",
+          "op_setting_3"
+        ],
+        "redundant_sensors": [
+          "sensor_14"
+        ],
+        "data_leakage_prevention": [
+          "lifecycle_stage"
+        ]
+      },
+      "remaining_features": [
+        "sensor_3",
+        "sensor_4",
+        "sensor_7",
+        "sensor_9",
+        "sensor_11",
+        "sensor_12",
+        "sensor_17",
+        "sensor_20",
+        "sensor_21"
+      ]
+    },
+    "memory_usage_mb": 32.917229652404785
+  }
+}

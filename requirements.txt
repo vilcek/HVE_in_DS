@@ -1,0 +1,52 @@
+# Requirements file for HVE_in_DS project
+# Generated from CMAPSS_env conda environment
+# Python 3.11.12
+
+# Core data science and machine learning
+numpy==2.2.5
+pandas==2.2.3
+scikit-learn==1.6.1
+scipy==1.15.2
+
+# Visualization libraries
+matplotlib==3.10.1
+seaborn==0.13.2
+plotly==6.0.1
+
+# Advanced ML libraries
+xgboost==3.0.0
+lightgbm==4.6.0
+tensorflow==2.18.0
+keras==3.10.0
+
+# Model interpretation and analysis
+shap==0.47.2
+
+# Statistical analysis
+statsmodels==0.14.4
+
+# Jupyter ecosystem
+jupyter
+jupyterlab==4.4.1
+ipywidgets==8.1.6
+nbformat==5.10.4
+
+# Utilities and helpers
+joblib==1.4.2
+tqdm==4.67.1
+requests==2.32.3
+pathlib  # Built-in for Python 3.4+
+pyyaml==6.0.2
+h5py==3.13.0
+
+# Additional scientific computing
+numba==0.61.2
+pyarrow==19.0.1
+
+# Development and documentation
+tabulate==0.9.0
+rich==14.0.0
+
+# For interactive visualizations
+kaleido==0.2.1
+

@@ -1,0 +1,57 @@
+{
+  "removed_features": [
+    "sensor_6",
+    "sensor_2",
+    "sensor_5",
+    "sensor_8",
+    "sensor_16",
+    "op_setting_1",
+    "sensor_10",
+    "sensor_13",
+    "sensor_15",
+    "sensor_18",
+    "op_setting_3",
+    "sensor_14",
+    "op_setting_2",
+    "sensor_1",
+    "sensor_19",
+    "lifecycle_stage"
+  ],
+  "removal_rationale": {
+    "uninformative_sensors": [
+      "sensor_15",
+      "sensor_2",
+      "sensor_8",
+      "sensor_13",
+      "sensor_6",
+      "sensor_1",
+      "sensor_5",
+      "sensor_10",
+      "sensor_16",
+      "sensor_18",
+      "sensor_19"
+    ],
+    "constant_op_settings": [
+      "op_setting_1",
+      "op_setting_2",
+      "op_setting_3"
+    ],
+    "redundant_sensors": [
+      "sensor_14"
+    ],
+    "data_leakage_prevention": [
+      "lifecycle_stage"
+    ]
+  },
+  "remaining_features": [
+    "sensor_3",
+    "sensor_4",
+    "sensor_7",
+    "sensor_9",
+    "sensor_11",
+    "sensor_12",
+    "sensor_17",
+    "sensor_20",
+    "sensor_21"
+  ]
+}

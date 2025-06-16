@@ -1,0 +1,17 @@
+{
+  "type": "weighted_ensemble",
+  "top_models": [
+    "Weighted Ensemble",
+    "Voting Ensemble",
+    "XGBoost"
+  ],
+  "weights": [
+    0.3355754059792485,
+    0.3350135654365554,
+    0.3294110285841961
+  ],
+  "requires_minmax_scaling": [
+    "Neural Network"
+  ],
+  "base_models_path": "../results_data/trained_models"
+}

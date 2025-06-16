@@ -1,0 +1,44 @@
+NASA Turbofan CMAPSS Data & Project NOTICE
+=========================================
+
+1. Scope
+--------
+This repository contains two distinct components:
+
+  (a) **Original Source Code** – © 2025 Alexandre Vilcek, released under the MIT
+      License (see LICENSE).
+
+  (b) **CMAPSS “Turbofan Engine Degradation Simulation” Data Set** – A.
+      Saxena & K. Goebel (2008), NASA Ames Prognostics Data Repository.
+
+2. Legal Status of the Data
+---------------------------
+The dataset was produced by U.S. Government employees in the course of
+official duties and is therefore in the *public domain in the United
+States* (17 U.S.C. § 105). NASA’s Scientific & Technical Information
+(STI) terms confirm the material may be used without permission and is
+provided *as-is, without warranty*.
+
+3. Attribution Guidelines
+-------------------------
+Please cite the data as:
+
+> Saxena, A., & Goebel, K. (2008). *Turbofan Engine Degradation
+> Simulation Data Set*. NASA Ames Prognostics Data Repository,
+> Moffett Field, CA.
+
+4. Warranty & Liability
+-----------------------
+THE CMAPSS DATA AND THIS SOFTWARE ARE PROVIDED “AS IS”, WITHOUT
+WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR NASA BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE DATA
+OR THE SOFTWARE.
+
+5. Third-Party Content
+----------------------
+Some CMAPSS distributions incorporate academic papers or figures that may
+still be under copyright. Users are responsible for verifying the status
+of any such embedded material.

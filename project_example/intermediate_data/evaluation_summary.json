@@ -1,0 +1,39 @@
+{
+  "evaluation_date": "2025-06-03 00:16:36",
+  "model_evaluated": "Linear Regression",
+  "test_engines": 100,
+  "performance_metrics": {
+    "rmse": 23.48983271073689,
+    "mae": 15.486048254500286,
+    "r2_score": 0.6804783402415533,
+    "mape_percent": 20.83619758575501,
+    "phm_score": 70648.42623221295,
+    "median_error": 2.9128835613078365,
+    "max_absolute_error": 111.33314091397028,
+    "error_std_dev": 22.449738685420186
+  },
+  "accuracy_analysis": {
+    "within_5_cycles": 62,
+    "within_10_cycles": 70,
+    "accuracy_rate_5_cycles": 62.0,
+    "accuracy_rate_10_cycles": 70.0
+  },
+  "business_impact": {
+    "total_maintenance_cost": 28059023.995436575,
+    "optimal_maintenance_cost": 10000000.0,
+    "additional_cost": 18059023.995436575,
+    "cost_per_engine": 180590.23995436577
+  },
+  "risk_assessment": {
+    "high_risk_engines": 30,
+    "critical_risk_engines": 22,
+    "early_predictions": 23,
+    "late_predictions": 38
+  },
+  "recommendations": {
+    "deployment_ready": false,
+    "requires_monitoring": true,
+    "safety_buffer_recommended": 5,
+    "retraining_frequency": "quarterly"
+  }
+}
