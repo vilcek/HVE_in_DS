@@ -94,6 +94,10 @@ HVE_in_DS/
             └── *_ensemble.json        # Ensemble configurations
 ```
 
+### Creating a New Project
+
+This template provides a complete data science project structure that you can use in two ways: **replicate the existing project example** to understand the workflow and methodology, or **adapt it to your own projects** by customizing the data, problem domain, and analysis requirements. The project example demonstrates predictive maintenance using NASA turbofan engine data, but the structure and GitHub Copilot integration system can be applied to any data science domain.
+
 ## Getting Started
 
 ### Prerequisites
@@ -272,7 +276,17 @@ More details about the dataset can be found at the NASA Prognostics Data Reposit
 
 ### Creating a New Project
 
-1. **Use the existing structure**:
+1. **Use the setup script (Recommended)**:
+   ```bash
+   # Create a new project using the automated setup script
+   python setup_new_project.py my_new_project
+   
+   # Or create in a specific directory path
+   python setup_new_project.py projects/my_new_project
+   python setup_new_project.py /path/to/my_new_project
+   ```
+   
+   Alternatively, **manually copy the structure**:
    ```bash
    # Start fresh with the main directory structure
    mkdir my_new_project
