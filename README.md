@@ -38,21 +38,10 @@ This project demonstrates how to leverage **GitHub Copilot in Agent mode** to dr
 ```
 HVE_in_DS/
 ├── README.md                          # This guide
+├── LICENSE                            # MIT License
+├── NOTICE                             # Copyright and attribution notices
 ├── requirements.txt                   # Python dependencies
-├── download_data.py                   # Data acquisition script
-├── .github/                           # GitHub Copilot prompt engineering system
-│   ├── copilot-instructions.md        # Global agent coding standards
-│   ├── instructions/                  # Agent behavioral guidelines
-│   │   └── notebook_guidelines.instructions.md  # Notebook development rules
-│   └── prompts/                       # User-initiated prompt templates
-│       ├── implementation_plan.prompt.md        # Strategic planning prompt
-│       └── plan_execution.prompt.md             # Task execution prompt
-├── chats/                             # Placeholder for Agent conversation logs
-├── intermediate_data/                 # Processed data between steps
-├── notebooks/                         # Generated Jupyter notebooks
-├── source_data/                       # Raw datasets and documentation
-│   └── scenario_description.md        # Problem description
-├── results_data/                      # Models and final outputs
+├── setup_new_project.py               # Automated project setup script
 └── project_example/                   # Complete working example
     ├── download_data.py               # Data acquisition script
     ├── .github/                       # Project-specific prompt engineering
@@ -69,11 +58,18 @@ HVE_in_DS/
     │   └── many_leakage_fixes.md      # Multiple iterations of improvements
     ├── intermediate_data/             # Processed data and metadata
     │   ├── data_exploration_*.csv     # Exploration phase outputs
+    │   ├── data_exploration_*.md      # Data exploration documentation
     │   ├── data_preparation_*.csv     # Cleaned datasets
+    │   ├── data_preparation_*.md      # Data preparation documentation
+    │   ├── data_preparation_*.json    # Data preparation metadata
     │   ├── feature_engineering_*.csv  # Engineered features
+    │   ├── feature_engineering_*.json # Feature engineering metadata
     │   ├── modeling_*.csv             # Model results
+    │   ├── modeling_*.md              # Modeling documentation
+    │   ├── modeling_*.json            # Modeling metadata
     │   ├── evaluation_*.csv           # Evaluation metrics
-    │   └── *_metadata.json            # Processing metadata
+    │   ├── evaluation_*.md            # Evaluation documentation
+    │   └── evaluation_*.json          # Evaluation metadata
     ├── notebooks/                     # Generated Jupyter notebooks
     │   ├── 01_data_exploration.ipynb  # Data analysis and visualization
     │   ├── 02_data_preparation.ipynb  # Data cleaning and preprocessing
@@ -84,13 +80,15 @@ HVE_in_DS/
     │   ├── Damage Propagation Modeling.pdf # Technical documentation
     │   ├── readme.txt                 # Dataset description
     │   ├── scenario_description.md    # Problem context
-    │   ├── train_FD00*.txt            # Training datasets
-    │   ├── test_FD00*.txt             # Test datasets
-    │   └── RUL_FD00*.txt              # Ground truth RUL values
+    │   ├── train_FD00*.txt            # Training datasets (FD001-FD004)
+    │   ├── test_FD00*.txt             # Test datasets (FD001-FD004)
+    │   └── RUL_FD00*.txt              # Ground truth RUL values (FD001-FD004)
     └── results_data/                  # Models and predictions
         └── trained_models/            # Saved model artifacts
             ├── best_model.pkl         # Best performing model
+            ├── best_model_*.json      # Best model configurations
             ├── model_*.pkl            # Individual model files
+            ├── scaler_*.pkl           # Data scaling artifacts
             └── *_ensemble.json        # Ensemble configurations
 ```
 
